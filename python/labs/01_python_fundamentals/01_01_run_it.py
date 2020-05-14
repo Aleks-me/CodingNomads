@@ -14,3 +14,14 @@
 	- Calculate how many seconds are in a year.
 
 '''
+
+print("Hello world!")
+
+# print("hello world)
+
+help('print')
+
+print(5 * 10)
+
+print('Seconds in a year:', 60 * 60 * 24 * 365)
+print('Seconds in the leap year:', 60 * 60 * 24 * 366)
