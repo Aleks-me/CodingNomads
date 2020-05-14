@@ -7,3 +7,10 @@ Letter input: o
 Result: 4
 
 '''
+
+user_words = input("Please, type some words: ")
+user_letter = input("Please, enter some letter (e.g. h): ")
+
+finder = user_words.find(user_letter)
+
+print(finder)

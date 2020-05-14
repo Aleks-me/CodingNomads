@@ -10,3 +10,9 @@ Output should read like - "81.32 degrees fahrenheit = 27.4 degrees celsius"
 
 
 '''
+
+fahrenheit = float(input("Enter Fahrenheit degrees to convert: "))
+
+celsius = (fahrenheit - 32) * (5 / 9)
+
+print(f"{fahrenheit} degrees fahrenheit = {celsius} degrees celsius")
