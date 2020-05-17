@@ -9,3 +9,13 @@ that we haven't looked at yet. See if you can figure it out, otherwise
 come back to this task after you have learned about loops)
 
 '''
+print("Please, enter 10 numbers one by one.")
+
+list_numbers = []
+
+for i in range(1, 11):
+    digit = float(input(f"Please, enter {i} number: "))
+    list_numbers.append(digit)
+
+print(max(list_numbers))
+print(sum(list_numbers))

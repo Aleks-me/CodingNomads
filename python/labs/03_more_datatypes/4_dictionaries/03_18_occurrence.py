@@ -6,3 +6,11 @@ user_input = "hello"
 result = {"h": 1, "e": 1, "l": 2, "o": 1}
 
 '''
+
+str_input = input("Please, enter one word: ")
+
+result = {}
+for letter in str_input:
+    result[letter] = result.get(letter, 0) + 1
+
+print(result)
