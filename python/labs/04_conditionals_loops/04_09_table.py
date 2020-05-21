@@ -8,3 +8,16 @@ Use a loop to print the following table to the console:
  40 41 42 43 44 45 46 47 48 49
 
 '''
+
+c_row = 0
+while c_row < 5:
+    st = ""
+    c_num = 0
+    while c_num < 10:
+        if c_row == 0:
+            st += str(c_num) + " "
+        else:
+            st += str(c_row) + str(c_num) + " "
+        c_num += 1
+    print(st)
+    c_row += 1

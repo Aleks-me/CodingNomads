@@ -17,3 +17,11 @@ Another example: if input is 3, you will output
 Hint: Think of nested for loops
 
 '''
+
+inp_num = int(input("Enter the number > 0: "))
+
+for i in range(0, inp_num+1):
+    if inp_num == 0:
+        print("Zero stars.")
+    else:
+        print("* " * i)

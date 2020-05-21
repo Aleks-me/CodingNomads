@@ -10,4 +10,8 @@ For example if n is 3, you print:
 
 '''
 
-n = 5
+n = 3
+x = 0
+while x < n:
+    print("*" + "*" * x)
+    x += 1
