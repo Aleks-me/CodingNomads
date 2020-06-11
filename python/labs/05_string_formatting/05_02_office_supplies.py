@@ -27,5 +27,6 @@ office = [
 ]
 
 for line in office:
-    name = line["full_name"].split()[1] + ", " + line["full_name"].split()[0]
+    name = ", ".join([line["full_name"].split()[1].upper(),
+                      line["full_name"].split()[0]])
     print(f"{name:20s} {line['item'].capitalize()}")

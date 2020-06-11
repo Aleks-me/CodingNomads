@@ -8,3 +8,13 @@ only if neither of them applies.
 '''
 
 file_name = 'integers.txt'
+
+try:
+    with open(file_name) as fn:
+        item = int(fn.readline().rstrip())
+except IOError:
+    print("There is no such file.")
+except ValueError:
+    print(f"{item} is not an ingteger.")
+else:
+    print(item + 10)

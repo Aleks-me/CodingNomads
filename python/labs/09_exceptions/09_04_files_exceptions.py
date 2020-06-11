@@ -23,3 +23,44 @@ BONUS CHALLENGE: write a custom Exception that inherits from Exception and raise
 first 100 characters of any of the files contain the string "Prince".
 
 '''
+path = "/home/alex_me/Documents/CodingNomads/python/labs/09_exceptions/books/"
+
+files = ["war_and_peace.txt",
+         "crime_and_punishment.txt",
+         "pride_and_prejudice.txt"]
+
+try:
+    with open(path + files[0]) as wap:
+        book_1 = wap.read()
+    with open(path + files[1], "w") as cap:
+        cap.write("")
+
+    for file in files:
+        with open(path + file) as book:
+            string = book.readline()
+            if len(string) != 0:
+                print(string[1])
+            else:
+                print("")
+except IOError as io:
+    print(io)
+except PermissionError as pe:
+    print(pe)
+except IndexError as ie:
+    print(ie)
+
+
+# Challenge section
+class FindPrince(Exception):
+    def __init__(self, message):
+        self.message = message
+
+
+for file in files:
+    with open(path + file) as book:
+        string = ""
+        while len(string) < 100:
+            string += book.readline()
+        print(string)
+        if "Prince" in string:
+            raise FindPrince("Prince here!")
