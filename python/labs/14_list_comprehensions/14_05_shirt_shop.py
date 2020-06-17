@@ -8,3 +8,7 @@ Then open up your online shop ;)
 
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
+
+warehouse = [x + f" size {y}" for x in colors for y in sizes]
+print("We're opened! We have:")
+print(warehouse)

@@ -5,6 +5,11 @@ result = {1: 1, 2: 4, 3: 9, ...and so on}
 
 '''
 
-result = {x: x*x for x in range(1, 11)}
+numbers = list(range(1, 11))
+result = {}
+for i in numbers:
+    result[i] = i*i
+
+# result = {x: x*x for x in range(1, 11)}
 
 print(result)
