@@ -4,3 +4,9 @@ Adapt your Generator expression from the previous Exercise
 What numbers do you get?
 
 '''
+
+given_list = [n for n in range(1, 10000)]
+
+gen = (x for x in given_list)
+for elem in gen:
+    print(elem // 1111)
