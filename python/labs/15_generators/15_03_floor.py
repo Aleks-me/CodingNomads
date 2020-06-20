@@ -7,6 +7,5 @@ What numbers do you get?
 
 given_list = [n for n in range(1, 10000)]
 
-gen = (x for x in given_list)
-for elem in gen:
-    print(elem // 1111)
+gen = (x // 1111 for x in given_list)
+print(list(gen))
