@@ -33,7 +33,7 @@ crecid**		int AI PK
 * **num_trades**	int
 * **trade_value**	decimal(15,2)
 * **open_price**	decimal(8,2)
-* **low_price**	decimal(8,2)
+* **low_price**        decimal(8,2)
 * **high_price**	decimal(8,2)
 * **close_price**	decimal(8,2)
 
@@ -47,11 +47,11 @@ crecid**		int AI PK
 * **num_trades**	int
 * **trade_value**	decimal(15,2)
 * **open_price**	decimal(8,2)
-* **low_price**	decimal(8,2)
+* **low_price**        decimal(8,2)
 * **high_price**	decimal(8,2)
 * **close_price**	decimal(8,2)
 * **expire_date**	date
-* **nom_value**	decimal(8,2)
+* **nom_value**        decimal(8,2)
 * **unit**		varchar(7)
 
 ```
