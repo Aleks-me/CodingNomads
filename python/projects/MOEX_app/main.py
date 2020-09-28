@@ -8,11 +8,14 @@ day) we can use this info to help us make an investment decisions.
 
 -----
 Main ideas of all this code are:
-- collect data for selected instrument or instruments;
+- collect data for selected instrument or instruments (you choose share
+  or bond for some date or between some dates, make request and get your
+  data back from Moscow Exchange);
 - save data to MYSQL database;
 - explore data to find an instrument which is not much volatile,
   has good liquidity, not that expensive to by and has a potential
-  to earn some money.
+  to earn some money. This comes through your trading experience and
+  there is no exact values on which to filter instruments :(
 
 This analysis will be valid as an idea for further investigation.
 

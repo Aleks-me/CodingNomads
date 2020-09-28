@@ -13,8 +13,8 @@ Main ideas:
 
 ## Getting Started
 
-In order to get all work:
-1. You'll need a local MYSQL server ready with several tables created.
+In order to run the project:
+1. You'll need a local MYSQL server ready with several tables created or use "mysqldump" to import my test database.
 2. Check methods description.
 3. Run "main.py".
 
