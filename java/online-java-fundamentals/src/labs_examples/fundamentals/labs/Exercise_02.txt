@@ -1,0 +1,34 @@
+1) If you haven't already, please create a Github account if you have not already done so.
+
+2) Once complete, practice the following on your own machine and paste the commands you run for each step below.
+
+Initializing git folder
+    1. In CodingNomads folder, create new folder git_practice
+    2. Inside git_practice:
+        a. Initialize folder as a git folder (make sure you are in the correct folder when initializing) by running
+            the "git init" command within the git_practice folder.
+        b. Make new file
+        c. Add file
+        d. Commit file
+        c. On Github, create new git_practice repository
+        d. Add this new GitHub repository as a new "remote" to your local Git repo. You can do this by using the command
+            git remote add <ANY_NAME> <URL_OF_NEW_GITHUB_REPO.git>
+        d. Push commit file to Github
+        e. Practice the following git flow until you feel comfortable:
+            i.   Create or modify file
+            ii.  Add file(s)
+            iii. Commit file(s)
+            iv.  Push file(s) to Github repository
+
+Adding a remote
+    1. Create new personal repository on Github named "git_practice_2".
+    2. On local machine, add the new remote address to the same git repo you were working with in the previous section above
+        (directions are provided on Github with new repo is created)
+    3. Push local git repository to your Github using the new remote.
+
+Cloning repository from Github
+    1. Find a repository on Github
+    2. Clone repository to local machine
+    3. Create new repository on Github
+    4. Add new remote on local machine
+    5. Push to new Github repository
