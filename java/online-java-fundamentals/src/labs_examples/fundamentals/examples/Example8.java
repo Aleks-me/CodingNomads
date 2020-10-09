@@ -8,7 +8,7 @@ package labs_examples.fundamentals.examples;
    Call this program "GalToLitTable.java".
 */
 class GalToLitTable {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         double gallons, liters;
         int counter;
 

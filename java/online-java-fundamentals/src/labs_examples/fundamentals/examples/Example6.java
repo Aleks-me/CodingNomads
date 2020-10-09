@@ -6,7 +6,7 @@ package labs_examples.fundamentals.examples;
   Call this file ForDemo.java.
 */
 class ForDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int count;
 
         //for(initialization; condition; iteration) statement;

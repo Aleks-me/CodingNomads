@@ -6,7 +6,7 @@ package labs_examples.fundamentals.examples;
   Call this file BlockDemo.java.
 */
 class BlockDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         double i = 5, j = 10, d;
 
 //        i = 0; // will cause block to not execute

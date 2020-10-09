@@ -7,7 +7,7 @@ package labs_examples.fundamentals.examples;
 */
 
 class GalToLit {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         double gallons; // holds the number of gallons
         double liters;  // holds conversion to liters
 

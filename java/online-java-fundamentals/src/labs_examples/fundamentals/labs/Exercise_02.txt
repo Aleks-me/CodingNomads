@@ -32,3 +32,5 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+I've already has some git experience, so I'll skip this :)
