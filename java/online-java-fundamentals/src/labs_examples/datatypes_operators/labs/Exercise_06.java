@@ -13,6 +13,13 @@ public class Exercise_06 {
     public static void main(String[] args) {
 
         // write code here
+        float pi = 3.14f;
+        float radius = pi;
+        int height = 5;
 
+        float volume = (float) (pi*((radius*2)*(radius*2))/4)*height;
+        float surfArea = (float) (pi*((radius*2)*(radius*2))/2)+pi*(radius*2)*height;
+
+        System.out.println("Cylinder volume is: " + volume + ", cylinder surface area is: " + surfArea);
     }
 }

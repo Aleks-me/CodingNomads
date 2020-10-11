@@ -2,7 +2,7 @@ package labs_examples.datatypes_operators.examples;
 
 // Side-effects can be important.
 class SideEffects {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int i;
 
         i = 0;

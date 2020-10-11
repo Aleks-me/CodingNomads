@@ -24,6 +24,8 @@ public class Exercise_07 {
         int days = scanner.nextInt();
 
         // write completed code here
+        long secCount = (days * 86400L);
+        System.out.println("Seconds in "+ days + " days is " + secCount);
 
     }
 }
