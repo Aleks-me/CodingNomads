@@ -8,4 +8,15 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_06 {
+    public static void main(String[] args) {
+
+        int end = 101;
+        int c = 1;
+        int sum = 0;
+        while(c < end){
+            sum += c;
+            c++;
+        }
+        System.out.println("Sum: " + sum);
+    }
 }

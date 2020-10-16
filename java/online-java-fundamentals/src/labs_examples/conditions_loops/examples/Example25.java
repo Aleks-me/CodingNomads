@@ -2,7 +2,7 @@ package labs_examples.conditions_loops.examples;
 
 // Using break to exit a loop.
 class BreakDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int num;
 
         num = 100;

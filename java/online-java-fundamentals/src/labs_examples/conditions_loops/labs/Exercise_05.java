@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
 
+import java.util.Scanner;
+
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +18,22 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter first number: ");
+        int inp1 = scan.nextInt();
+        System.out.println("Enter second number: ");
+        int inp2 = scan.nextInt();
+
+        int counter = 0;
+        for(int i = inp1; i < (inp2+1); i++){
+            counter += i;
+        }
+
+        float avg = (inp1 + inp2) / 2.0f;
+
+        System.out.println("Sum of numbers between: " + counter + ", average: " + avg);
+
+    }
 }

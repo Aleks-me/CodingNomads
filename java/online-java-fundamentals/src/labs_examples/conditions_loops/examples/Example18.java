@@ -2,7 +2,7 @@ package labs_examples.conditions_loops.examples;
 
 // The body of a loop can be empty.
 class Empty3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int i;
         int sum = 0;
 

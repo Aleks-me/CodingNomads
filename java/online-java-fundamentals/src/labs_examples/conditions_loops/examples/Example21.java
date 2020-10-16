@@ -2,7 +2,7 @@ package labs_examples.conditions_loops.examples;
 
 // Compute integer powers of 2.
 class Power {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int e;
         int result;
 

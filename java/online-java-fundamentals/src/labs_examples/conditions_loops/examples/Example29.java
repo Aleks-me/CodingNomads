@@ -2,7 +2,7 @@ package labs_examples.conditions_loops.examples;
 
 // Another example of using break with a label.
 class Break5 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         done:
         for(int i=0; i<10; i++) {

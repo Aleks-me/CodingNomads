@@ -2,7 +2,7 @@ package labs_examples.conditions_loops.examples;
 
 // Where you put a label is important.
 class Break6 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int x=0, y=0;
 
 // here, put label before for statement.
