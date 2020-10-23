@@ -5,18 +5,15 @@ package labs_examples.arrays.examples;
 */
 
 class Bubble {
-    public static void main(String args[]) {
-        String str[] = {"this", "is", "a", "bubble", "sort!"};
+    public static void main(String[] args) {
+        String[] str = {"this", "is", "a", "bubble", "sort!"};
 
         int a, b;
-        int size;
         String t;
-
 
         // display original array
         System.out.print("Original array is:");
-        for(int i=0; i < str.length; i++)
-            System.out.print(" " + str[i]);
+        for (String s : str) System.out.print(" " + s);
 
         System.out.println();
 
@@ -31,15 +28,9 @@ class Bubble {
             }
         }
 
-        String str2 = "sorter";
-        int i = str2.indexOf('r');
-        int y = str2.lastIndexOf('r');
-
-
         // display sorted array
-//        System.out.print("Sorted array is:");
-//        for(int i=0; i < str.length; i++)
-//            System.out.print(" " + str[i]);
-//        System.out.println();
+        System.out.print("Sorted array is:");
+        for (String s : str) System.out.print(" " + s);
+        System.out.println();
     }
 }

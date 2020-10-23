@@ -2,12 +2,11 @@ package labs_examples.arrays.examples;
 
 // Some String operations.
 class StrOps {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         String str1 = "When it comes to programming, Java is #1.";
-        String str2 = "When it comes to programming, Java is #1.";
+        String str2 = "When it comes to programming, Java is #1";
         String str3 = "Java strings are powerful.";
         int result, idx;
-        char ch;
 
         if (str1.equalsIgnoreCase(str2)){
             System.out.println("this shouldn't print");

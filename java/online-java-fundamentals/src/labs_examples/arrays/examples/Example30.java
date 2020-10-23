@@ -33,7 +33,7 @@ class ShowBits {
 
 // Demonstrate ShowBits.
 class ShowBitsDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ShowBits b = new ShowBits(8);
         ShowBits i = new ShowBits(32);
         ShowBits li = new ShowBits(64);

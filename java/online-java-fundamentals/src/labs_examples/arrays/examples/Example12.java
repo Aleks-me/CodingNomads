@@ -14,7 +14,6 @@ class Queue {
     }
 
     // put a characer into the queue
-
     public void put(char ch) {
         if(putloc==q.length) {
             System.out.println(" -- Queue is full.");
@@ -37,12 +36,11 @@ class Queue {
 
 // Demonstrate the Queue class.
 class QDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Queue bigQ = new Queue(100);
         Queue smallQ = new Queue(4);
         char ch;
         int i;
-
 
         System.out.println("Using bigQ to store the alphabet.");
         // put some numbers into bigQ
@@ -57,7 +55,6 @@ class QDemo {
         }
 
         System.out.println("\n");
-
 
         System.out.println("Using smallQ to generate erros.");
         // Now, use smallQ to generate some errors

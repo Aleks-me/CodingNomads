@@ -2,8 +2,8 @@ package labs_examples.arrays.examples;
 
 // Manually allocate differing size second dimensions.
 class Ragged {
-    public static void main(String args[]) {
-        int riders[][] = new int[7][];
+    public static void main(String[] args) {
+        int[][] riders = new int[7][];
         riders[0] = new int[10];
         riders[1] = new int[10];
         riders[2] = new int[10];
