@@ -7,8 +7,8 @@ class ChkNum {
     }
 }
 
-class ParmDemo {
-    public static void main(String args[]) {
+class ParamDemo {
+    public static void main(String[] args) {
         ChkNum e = new ChkNum();
 
         if(e.isEven(10)) {

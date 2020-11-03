@@ -8,8 +8,8 @@ class Pwr_10 {
     Pwr_10(double base, int exp) {
         this.b = base;
         this.e = exp;
-
         this.pwr = 1;
+
         if(exp == 0)
             return;
         for( ; exp > 0; exp--)
@@ -20,5 +20,3 @@ class Pwr_10 {
         return this.pwr;
     }
 }
-
-

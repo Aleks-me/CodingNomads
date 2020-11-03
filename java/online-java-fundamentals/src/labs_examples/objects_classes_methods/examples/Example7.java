@@ -2,15 +2,12 @@ package labs_examples.objects_classes_methods.examples;
 
 class Factor {
     boolean isFactor(int a, int b) {
-        if( (b % a) == 0)
-            return true;
-        else
-            return false;
+        return (b % a) == 0;
     }
 }
 
 class IsFact {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Factor x = new Factor();
 
         if(x.isFactor(2, 20)) System.out.println("2 is factor");

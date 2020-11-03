@@ -10,7 +10,7 @@ class Vehicle_4_1 {
 
 // This class declares an object of type Vehicle.
 class TwoVehicles {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Vehicle_4_1 minivan = new Vehicle_4_1();
         Vehicle_4_1 sportscar = new Vehicle_4_1();

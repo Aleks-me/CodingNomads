@@ -12,7 +12,7 @@ class Vehicle_4_5 {
 }
 
 class RetMeth {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Vehicle_4_5 minivan = new Vehicle_4_5();
         Vehicle_4_5 sportscar = new Vehicle_4_5();
 
@@ -32,11 +32,8 @@ class RetMeth {
         range1 = minivan.range();
         range2 = sportscar.range();
 
-
         System.out.println("Minivan can carry " + minivan.passengers +
                 " with range of " + range1 + " Miles");
-
-
         System.out.println("Sportscar can carry " + sportscar.passengers +
                 " with range of " + range2 + " miles");
 

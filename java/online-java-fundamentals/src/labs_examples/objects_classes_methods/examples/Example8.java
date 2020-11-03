@@ -11,15 +11,14 @@ class Vehicle_4_8 {
     }
 
     // Compute fuel needed for a given distance.
-    double fuelneeded(int miles)
-    {
+    double fuelneeded(int miles) {
         return (double) miles / mpg;
     }
 }
 
 class CompFuel {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Vehicle_4_8 minivan = new Vehicle_4_8();
         Vehicle_4_8 sportscar = new Vehicle_4_8();

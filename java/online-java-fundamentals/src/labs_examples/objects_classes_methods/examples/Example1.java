@@ -28,12 +28,11 @@ class Vehicle4 {
 
 // This class declares an object of type Vehicle.
 class VehicleDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         int range;
 
         // assign values to fields in minivan
-
 
         Vehicle4 minivan = new Vehicle4(8, 20, 20);
 
@@ -42,22 +41,21 @@ class VehicleDemo {
 
         // UNCOMMENT THE LINES BELOW - WHY DO WE SEE ERRORS?
 
-        /*
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 22;
-
-
-        Vehicle4 corvette = new Vehicle4();
-        corvette.passengers = 2;
-        corvette.fuelcap = 15;
-        corvette.mpg = 12;
-
-        range = minivan.mpg * minivan.fuelcap;
-
-        System.out.println("Minivan can carry " + minivan.passengers +
-                " with a range of " + range);
-        */
+//        minivan.passengers = 7;
+//        minivan.fuelcap = 16;
+//        minivan.mpg = 22;
+//
+//        Vehicle4 corvette = new Vehicle4();
+//        corvette.passengers = 2;
+//        corvette.fuelcap = 15;
+//        corvette.mpg = 12;
+//
+//        range = minivan.mpg * minivan.fuelcap;
+//
+//        System.out.println("Minivan can carry " + minivan.passengers +
+//                " with a range of " + range);
+        // Variables set to private, so can't be used outside Vehicle4 class
+        // there must be 3 parameters put to object constructor
 
         int val = sum(10,12);
 
@@ -65,8 +63,6 @@ class VehicleDemo {
 
     public static int intMethod(){
         int number = 10;
-
-
         return number;
     }
 

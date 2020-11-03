@@ -11,3 +11,5 @@ of constructors that you created in the previous exercise.
 3) After creating these objects, print the status of these objects. For example:
 System.out.println(cardObj.toString())
 
+Checked!
+

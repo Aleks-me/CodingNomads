@@ -24,7 +24,7 @@ class Pwr_4_14 {
 }
 
 class DemoPwr {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Pwr_4_14 x = new Pwr_4_14(4.0, 2);
         Pwr_4_14 y = new Pwr_4_14(2.5, 1);
         Pwr_4_14 z = new Pwr_4_14(5.7, 0);
