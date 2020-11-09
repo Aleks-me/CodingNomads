@@ -3,14 +3,12 @@ package labs_examples.objects_classes_methods.examples.advanced;
 // Demonstrate method overloading.
 class Overload {
     void ovlDemo() {
-
         System.out.println("No parameters");
     }
     String s = "s";
 
     // Overload ovlDemo for one integer parameter.
     void ovlDemo(int a) {
-
         System.out.println("One parameter: " + a);
     }
 
@@ -22,14 +20,13 @@ class Overload {
 
     // Overload ovlDemo for two double parameters.
     double ovlDemo(double a, double b) {
-        System.out.println("Two double parameters: " +
-                a + " "+ b);
+        System.out.println("Two double parameters: " + a + " "+ b);
         return a + b;
     }
 }
 
 class OverloadDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Overload ob = new Overload();
         int resI;
         double resD;
@@ -42,13 +39,10 @@ class OverloadDemo {
         System.out.println();
 
         resI = ob.ovlDemo(4, 6);
-        System.out.println("Result of ob.ovlDemo(4, 6): " +
-                resI);
+        System.out.println("Result of ob.ovlDemo(4, 6): " + resI);
         System.out.println();
 
-
         resD = ob.ovlDemo(1.1, 2.32);
-        System.out.println("Result of ob.ovlDemo(1.1, 2.2): " +
-                resD);
+        System.out.println("Result of ob.ovlDemo(1.1, 2.2): " + resD);
     }
 }

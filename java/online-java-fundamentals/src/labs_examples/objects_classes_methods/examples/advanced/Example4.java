@@ -14,27 +14,21 @@ class Block {
 
     // Return true if ob defines same block.
     boolean sameBlock(Block ob) {
-        if((ob.a == a) & (ob.b == b) & (ob.c == c)) return true;
-        else return false;
+        return (ob.a == a) & (ob.b == b) & (ob.c == c);
     }
 
     // Return true if ob has same volume.
     boolean sameVolume(Block ob) {
-        if(ob.volume == volume) return true;
-        else return false;
+        return ob.volume == volume;
     }
 
     void printBlock(Block variableName){
         System.out.println(variableName.a);
     }
-
-    void test(int i){
-        System.out.print(i);
-    }
 }
 
 class PassOb {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Block ob1 = new Block(10, 2, 5);
         Block ob2 = new Block(10, 2, 5);
         Block ob3 = new Block(4, 5, 5);

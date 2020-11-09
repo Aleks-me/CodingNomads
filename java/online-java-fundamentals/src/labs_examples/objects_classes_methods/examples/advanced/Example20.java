@@ -3,12 +3,12 @@ package labs_examples.objects_classes_methods.examples.advanced;
 class Quicksort {
 
     // Set up a call to the actual Quicksort method.
-    static void qsort(char items[]) {
+    static void qsort(char[] items) {
         qs(items, 0, items.length-1);
     }
 
     // A recursive version of Quicksort for characters.
-    private static void qs(char items[], int left, int right)
+    private static void qs(char[] items, int left, int right)
     {
         int i, j;
         char x, y;
@@ -36,8 +36,8 @@ class Quicksort {
 }
 
 class QSDemo {
-    public static void main(String args[]) {
-        char a[] = { 'd', 'x', 'a', 'r', 'p', 'j', 'i' };
+    public static void main(String[] args) {
+        char[] a = { 'd', 'x', 'a', 'r', 'p', 'j', 'i' };
         int i;
 
         System.out.print("Original array: ");

@@ -6,7 +6,6 @@ package labs_examples.objects_classes_methods.examples.advanced;
 class FailSoftArray {
     private int a[]; // reference to array
     private int errval; // value to return if get() fails
-
     public int length; // length is public
 
     /* Construct array given its size and the value to
@@ -35,14 +34,13 @@ class FailSoftArray {
 
     // Return true if index is within bounds.
     private boolean indexOK(int index) {
-        if(index >= 0 & index < length) return true;
-        return false;
+        return index >= 0 & index < length;
     }
 }
 
 // Demonstrate the fail-soft array.
 class FSDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         FailSoftArray fs = new FailSoftArray(5, -1);
         int x;
 

@@ -10,13 +10,11 @@ class VarArgs {
 
         for(int i=0; i < v.length; i++)
             System.out.println("  arg " + i + ": " + v[i]);
-
         System.out.println();
     }
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
-
         // Notice how vaTest() can be called with a
         // variable number of arguments.
         vaTest(10);      // 1 arg

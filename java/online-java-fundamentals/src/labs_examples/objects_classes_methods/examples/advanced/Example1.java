@@ -18,7 +18,7 @@ class MyClass {
 }
 
 class AccessDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         MyClass ob = new MyClass();
         //ob.callPrivate();
         int xyz = 10;

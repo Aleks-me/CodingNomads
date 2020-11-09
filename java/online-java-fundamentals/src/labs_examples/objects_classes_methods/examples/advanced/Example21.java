@@ -2,10 +2,9 @@ package labs_examples.objects_classes_methods.examples.advanced;
 
 // Use an inner class.
 class Outer {
-    private int nums[];
+    private int[] nums;
 
-    Outer(int n[]) {
-
+    Outer(int[] n) {
         nums = n;
     }
 
@@ -37,8 +36,7 @@ class Outer {
 
         int avg() {
             int a = 0;
-            for(int i=0; i < nums.length; i++)
-                a += nums[i];
+            for (int num : nums) a += num;
 
             return a / nums.length;
         }
@@ -46,8 +44,8 @@ class Outer {
 }
 
 class NestedClassDemo {
-    public static void main(String args[]) {
-        int x[] = { 3, 2, 1, 5, 6, 9, 7, 8 };
+    public static void main(String[] args) {
+        int[] x = { 3, 2, 1, 5, 6, 9, 7, 8 };
         Outer outOb = new Outer(x);
 
         outOb.analyze();

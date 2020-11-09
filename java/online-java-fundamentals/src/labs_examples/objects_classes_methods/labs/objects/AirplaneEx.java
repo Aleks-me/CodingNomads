@@ -18,12 +18,14 @@ public class AirplaneEx {
         System.out.println(flightData.toString());
         System.out.println(Boeing.WhatDistLeft(2000));
         System.out.println(Boeing.WhatDistLeft(6000));
+        turbo.setTurbineAmount(4);
+        System.out.println(turbo.toString());
     }
 }
 
 class Airplane{
-    public double fuelCap;
-    public int fuelLeftPct;
+    private double fuelCap;
+    private int fuelLeftPct;
     InnerSpace InSpace;
     Turbine engine;
     Crew pilots;
@@ -42,11 +44,27 @@ class Airplane{
     }
 
     String WhatDistLeft(int distPass) {
-        if (flight.flightDist - distPass < 0) {
+        if (flight.getFlightDist() - distPass < 0) {
             return "Out of Fuel!";
         } else {
-            return "Distance left " + (flight.flightDist - distPass);
+            return "Distance left " + (flight.getFlightDist() - distPass);
         }
+    }
+
+    public double getFuelCap() {
+        return fuelCap;
+    }
+
+    public void setFuelCap(double fuelCap) {
+        this.fuelCap = fuelCap;
+    }
+
+    public int getFuelLeftPct() {
+        return fuelLeftPct;
+    }
+
+    public void setFuelLeftPct(int fuelLeftPct) {
+        this.fuelLeftPct = fuelLeftPct;
     }
 
     @Override
@@ -63,16 +81,48 @@ class Airplane{
 }
 
 class InnerSpace{
-    int seatsAmount;
-    int numPassBetweenRows;
-    boolean haveBusinessClass;
-    boolean isCargo;
+    private int seatsAmount;
+    private int numPassBetweenRows;
+    private boolean haveBusinessClass;
+    private boolean isCargo;
 
     public InnerSpace(int seatsAmount, int numPassagesBetweenRows, boolean haveBusinessClass, boolean isCargo) {
         this.seatsAmount = seatsAmount;
         this.numPassBetweenRows = numPassagesBetweenRows;
         this.haveBusinessClass = haveBusinessClass;
         this.isCargo = isCargo;
+    }
+
+    public int getSeatsAmount() {
+        return seatsAmount;
+    }
+
+    public void setSeatsAmount(int seatsAmount) {
+        this.seatsAmount = seatsAmount;
+    }
+
+    public int getNumPassBetweenRows() {
+        return numPassBetweenRows;
+    }
+
+    public void setNumPassBetweenRows(int numPassBetweenRows) {
+        this.numPassBetweenRows = numPassBetweenRows;
+    }
+
+    public boolean isHaveBusinessClass() {
+        return haveBusinessClass;
+    }
+
+    public void setHaveBusinessClass(boolean haveBusinessClass) {
+        this.haveBusinessClass = haveBusinessClass;
+    }
+
+    public boolean isCargo() {
+        return isCargo;
+    }
+
+    public void setCargo(boolean cargo) {
+        isCargo = cargo;
     }
 
     @Override
@@ -87,11 +137,27 @@ class InnerSpace{
 }
 
 class Turbine{
-    int turbineAmount;
-    int turbineHp;
+    private int turbineAmount;
+    private int turbineHp;
 
     public Turbine(int turbineAmount, int turbineHp){
         this.turbineAmount = turbineAmount;
+        this.turbineHp = turbineHp;
+    }
+
+    public int getTurbineAmount() {
+        return turbineAmount;
+    }
+
+    public void setTurbineAmount(int turbineAmount) {
+        this.turbineAmount = turbineAmount;
+    }
+
+    public int getTurbineHp() {
+        return turbineHp;
+    }
+
+    public void setTurbineHp(int turbineHp) {
         this.turbineHp = turbineHp;
     }
 
@@ -104,11 +170,27 @@ class Turbine{
 }
 
 class Crew{
-    int numPilots;
-    int numStewardess;
+    private int numPilots;
+    private int numStewardess;
 
     public Crew(int numPilots, int numStewardess) {
         this.numPilots = numPilots;
+        this.numStewardess = numStewardess;
+    }
+
+    public int getNumPilots() {
+        return numPilots;
+    }
+
+    public void setNumPilots(int numPilots) {
+        this.numPilots = numPilots;
+    }
+
+    public int getNumStewardess() {
+        return numStewardess;
+    }
+
+    public void setNumStewardess(int numStewardess) {
         this.numStewardess = numStewardess;
     }
 
@@ -122,10 +204,18 @@ class Crew{
 }
 
 class CargoHold{
-    float cargoCapacity;
+    private float cargoCapacity;
 
     public CargoHold(float cargoVolume) {
         this.cargoCapacity = cargoVolume;
+    }
+
+    public float getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public void setCargoCapacity(float cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
     }
 
     @Override
@@ -137,10 +227,10 @@ class CargoHold{
 }
 
 class FlightParameters{
-    int maxFlightHeight = 11200;
-    int maxSpeed = 890;
-    int flightDist = 5000;
-    int fuelPerHour = 3200;
+    private int maxFlightHeight = 11200;
+    private int maxSpeed = 890;
+    private int flightDist = 5000;
+    private int fuelPerHour = 3200;
 
     public FlightParameters() {
     }
@@ -149,6 +239,38 @@ class FlightParameters{
         this.maxFlightHeight = maxFlightHeight;
         this.maxSpeed = maxSpeed;
         this.flightDist = flightDist;
+        this.fuelPerHour = fuelPerHour;
+    }
+
+    public int getMaxFlightHeight() {
+        return maxFlightHeight;
+    }
+
+    public void setMaxFlightHeight(int maxFlightHeight) {
+        this.maxFlightHeight = maxFlightHeight;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getFlightDist() {
+        return flightDist;
+    }
+
+    public void setFlightDist(int flightDist) {
+        this.flightDist = flightDist;
+    }
+
+    public int getFuelPerHour() {
+        return fuelPerHour;
+    }
+
+    public void setFuelPerHour(int fuelPerHour) {
         this.fuelPerHour = fuelPerHour;
     }
 

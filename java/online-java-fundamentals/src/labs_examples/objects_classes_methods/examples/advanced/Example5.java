@@ -7,23 +7,18 @@ class Test {
     void noChange(int i, int j) {
         i = i + j;
         j = -j;
-        System.out.println("in other method: " +
-                i + " " + j);
+        System.out.println("in other method: " + i + " " + j);
     }
 }
 
 class CallByValue {
-    public static void main(String args[]) {
-        Test ob = new Test();
+    public static void main(String[] args) {
 
+        Test ob = new Test();
         int a = 15, b = 20;
 
-        System.out.println("a and b before call: " +
-                a + " " + b);
-
+        System.out.println("a and b before call: " + a + " " + b);
         ob.noChange(a, b);
-
-        System.out.println("a and b after call: " +
-                a + " " + b);
+        System.out.println("a and b after call: " + a + " " + b);
     }
 }

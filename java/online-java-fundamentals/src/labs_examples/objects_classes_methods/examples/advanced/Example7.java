@@ -2,7 +2,7 @@ package labs_examples.objects_classes_methods.examples.advanced;
 
 // Return a String object.
 class ErrorMsg {
-    String msgs[] = {
+    String[] msgs = {
             "Output Error",
             "Input Error",
             "Disk Full",
@@ -19,7 +19,7 @@ class ErrorMsg {
 }
 
 class ErrMsg {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         ErrorMsg err = new ErrorMsg();
 
         System.out.println(err.getErrorMsg(2));
